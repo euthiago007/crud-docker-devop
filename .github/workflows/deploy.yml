@@ -1,0 +1,16 @@
+
+name: Deploy CRUD
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Atualizar aplicação
+        run: |
+          cd /home/thiagofoda/crud-docker-devop
+          git pull origin main
+          sudo docker compose up -d --build
