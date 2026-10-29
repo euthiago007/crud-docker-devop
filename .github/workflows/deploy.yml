@@ -1,8 +1,6 @@
 
 name: Deploy CRUD
 
-name: Deploy CRUD
-
 on:
   push:
     branches:
